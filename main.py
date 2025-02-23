@@ -19,8 +19,10 @@ def main():
     
     char_counts = get_char_counts(get_book_text("./books/frankenstein.txt"))
     char_output = get_sorted_char_list(char_counts)
-    for item in char_output:
-        print(item)
+       
+    for dictionary in char_output:
+        for k, v in dictionary.items():
+            print(f"{k}: {v}")
     
     print("============= END ===============")
 
