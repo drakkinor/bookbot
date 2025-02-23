@@ -23,7 +23,8 @@ def get_sorted_char_list(dictionary):
     #instantiate return list
     sorted_list = []
 
-    #iterate sorted dictionary to create and append new single-entry dictionaries for each alpha kv pair
+    #iterate sorted dictionary to create and append new single-entry dictionaries for each kv pair
+    #filters for alpha chars only, may have been better to separate that functionality?
     for item in sorted_dict:
         if item.isalpha():
             mydict = {}
